@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Trang Chủ</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<div id="loading">
+			<div class="logo-loader"><img src="./assets/images/icons/loading.svg" alt=""></div>
+			<div class="progstat-wrapper">Loading:<span id="progstat">0</span>%</div>
+			<div id="progress"></div>
+		</div>
+		<header>
+			<div class="container">
+				<div class="logo">
+					<ul>
+						<li>Hotline: <span>(+028) 3606 8688</span></li>
+						<li><img src="../../assets/images/header-img/Namsan Logo-1.png" alt="" width="149px"></li>
+						<li>
+							<ul>
+								<li><img src="../../assets/images/header-img/facebook-logo.png" alt=""></li>
+								<li><img src="../../assets/images/header-img/google.png" alt=""></li>
+								<li><img src="../../assets/images/header-img/twitter.png" alt=""></li>
+								<li><img src="../../assets/images/header-img/printerest.png" alt=""></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="">Trang ch&#x1EE7;</a></li>
+					<li><a href=""> Gi&#x1EDB;i thi&#x1EC7;u</a></li>
+					<li><a href="">D&#x1ECB;ch v&#x1EE5;</a></li>
+					<li><a href="">Th&#x1B0; vi&#x1EC7;n</a></li>
+					<li><a href=""> B&#x1EA3;ng gi&aacute; d&#x1ECB;ch v&#x1EE5;</a></li>
+					<li><a href="">Tin T&#x1EE9;c</a></li>
+					<li><a href=""> Li&#x1EC7;n h&#x1EC7;</a></li>
+					<li><a href=""><img src="../../assets/images/header-img/Search.png" alt="" width="16px"></a></li>
+					<li><a href=""><img src="../../assets/images/header-img/world.png" alt="" width="16px"> VN <img src="../../assets/images/header-img/Path 1247.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<main>
+			<div class="google-map">
+				<select>
+					<option value="inputLocations_1">Bản Đồ Nội Địa</option>
+					<option value="inputLocations_2">Bản Đồ Ngoại Địa</option>
+				</select>
+				<div id="map"></div>
+			</div>
+			<script>
+				var locationsObject = {
+					inputLocations_1 : [
+						{
+							lat: 10.807100,
+							lng: 106.661638,
+							name: 'Ho Chi Minh Headoffice',
+							icon: "./assets/images/icons/gmap.svg",
+							address: 'Floor 4, Thang Long Building, 29 Thang Long St., Ward 4,  Tan Binh Dist., HCMC, Vietnam.',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						},
+						{
+							lat: 11.328765,
+							lng: 106.476674,
+							name: 'Binh Duong Branch',
+							icon: "./assets/images/icons/gmap.svg",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						}
+						,
+						{
+							lat: 10.811231,
+							lng: 106.638794,
+							name: 'Binh Duong Branch',
+							icon: "./assets/images/icons/map.png",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						}
+						,
+						{
+							lat: 9.692205,
+							lng: 105.749568,
+							name: 'Bo Na Branch',
+							icon: "./assets/images/icons/map.png",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						}
+						,
+						{
+							lat: 21.0227788,
+							lng: 105.8194112,
+							name: 'Bo Na Branch',
+							icon: "./assets/images/icons/map.png",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						}
+						,
+						{
+							lat: 20.8468135,
+							lng: 106.6636414,
+							name: 'Bo Na Branch',
+							icon: "./assets/images/icons/map.png",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						}
+					],
+					inputLocations_2 : [
+						{
+							lat: 11.328765,
+							lng: 106.476674,
+							name: 'Binh Duong Branch',
+							icon: "./img/icons/gmap.svg",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						},
+					]
+				}
+			</script>
+			<div class="index-page" id="js-page-verify" hidden></div>
+		</main>
+		<footer class="footer">
+			<hr>
+			<div class="container">
+				<div class="row">
+					<div class="col-2"><img src="../../assets/images/header-img/Group 62.png" alt=""></div>
+					<div class="col-2">
+						<ul>
+							<h3>GI&#x1EDA;I THI&#x1EC6;U</h3>
+							<li>Gi&#x1EDB;i thi&#x1EC7;u v&#x1EC1; Namsan</li>
+							<li>&Dstrok;&#x1ED9;i ng&utilde; b&aacute;c s&itilde;</li>
+							<li>Th&agrave;nh t&#x1EF1;u &dstrok;&#x1EA1;t &dstrok;&#x1B0;&#x1EE3;c</li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<ul>
+							<h3>D&#x1ECA;CH V&#x1EE4;</h3>
+							<li>Ph&#x1EAB;u thu&#x1EAD;t v&ugrave;ng m&#x1EB7;t</li>
+							<li>Ph&#x1EAB;u thu&#x1EAD;t v&ugrave;ng ng&#x1EF1;c</li>
+							<li>T&#x1EA1;o d&aacute;ng c&#x1A1; th&#x1EC3;</li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<ul class="last">
+							<li>Ph&#x1EAB;u thu&#x1EAD;t nam gi&#x1EDB;i</li>
+							<li>V&ugrave;ng th&#x1EA7;m k&iacute;n</li>
+							<li>Th&#x1EA9;m m&#x1EF9; n&#x1ED9;i khoa</li>
+						</ul>
+					</div>
+					<div class="col-4"><img src="../../assets/images/header-img/Group 455.png" alt=""></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+						<div class="box">
+							<h3><img src="../../assets/images/header-img/Group 55.png" alt="">&Dstrok;&#x1ECA;A CH&#x1EC8;</h3>
+							<div class="text">
+								<p>166A Tr&#x1EA7;n H&#x1B0;ng &Dstrok;&#x1EA1;o, <br>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;P. Nguy&#x1EC5;n C&#x1B0; Trinh, Q1, TP.HCM</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="box">
+							<h3><img src="../../assets/images/header-img/Group 57.png" alt="">GI&#x1EDC; HO&#x1EA0;T &Dstrok;&#x1ED8;NG</h3>
+							<div class="text">
+								<p>Th&#x1EE9; hai - Th&#x1EE9; s&aacute;u: 8:00 - 18:00</p>
+								<p>Th&#x1EE9; b&#x1EA3;y - CN: 9:00 - 20:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="box">
+							<h3><img src="../../assets/images/header-img/Group 54.png" alt="">PHONE</h3>
+							<div class="text">
+								<p>(+028) 3606 8688</p>
+								<p>(+028) 3606 8688</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="box">
+							<h3><img src="../../assets/images/header-img/Group 56.png" alt="">EMAIL</h3>
+							<div class="text">
+								<p>Info@namsan.com</p>
+								<p>Contact@namsan.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-footer">
+				<div class="container">
+					<div class="left">
+						<p>Copyright by Web4gsolutions 2019. All rights reserved.</p>
+					</div>
+					<div class="right">
+						<p>Ch&iacute;nh s&aacute;ch b&#x1EA3;o m&#x1EAD;t</p>
+						<p>&Dstrok;i&#x1EC1;u kho&#x1EA3;n d&#x1ECB;ch v&#x1EE5;</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&amp;libraries=places"></script>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>
